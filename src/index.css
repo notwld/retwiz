@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo:100');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.montserrat {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.montserrat-bold {
+  font-family: "Montserrat";
+  font-weight: 800;
+}
+
+.exo {
+  font-family: "Exo";
+  font-weight: 600;
+
+
+}
+
+.custom-grid {
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")
+}
+
+* {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none; 
+  transform: translate(-50%, -50%); 
+  z-index: 9999;
+}
