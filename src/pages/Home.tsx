@@ -14,38 +14,37 @@ export default function Home() {
         {/* Grid Overlay */}
         <div
           className="absolute inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5 custom-grid animate-bg-scroll-reverse"
-          
         ></div>
       </div>
 
       {/* Content Section */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center">
-        <h1 className="text-[12rem] text-white exo lg:text-[12rem] md:text-9xl sm:text-[6rem]">
+        <h1 className="text-[3rem] sm:text-[6rem] md:text-9xl lg:text-[12rem] text-white exo">
           retwiz
         </h1>
-        <span className="text-slate-400 mt-4 montserrat text-center md:w-3/2 sm:w-3/4 md:text-lg sm:text-base">
+        <span className="text-slate-400 mt-4 montserrat text-center sm:w-3/4 md:w-2/3 lg:w-1/2 md:text-lg sm:text-base">
           A web development and design agency that takes the complexity out of
           technology. We focus on delivering sleek, innovative solutions, so you
           can focus on your vision.
         </span>
         <div className="flex justify-center items-center mt-5">
-            <button className="cursor-pointer ring-2 ring-violet rounded-full px-4 py-2 bg-slate-900 text-white montserrat text-lg flex items-center">
+          <button className="cursor-pointer ring-2 ring-violet rounded-full px-4 py-2 bg-slate-900 text-white montserrat text-lg flex items-center">
             Get Started
             <svg
-                className="ml-2 w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              className="ml-2 w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-                <path
+              <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M9 5l7 7-7 7"
-                />
+              />
             </svg>
-            </button>
+          </button>
         </div>
       </div>
     </div>

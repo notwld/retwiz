@@ -93,8 +93,12 @@ const ParticlesComponent: React.FC = () => {
 
   if (init) {
     return (
-      <div>
-        <Particles id="tsparticles" options={options} className="absolute h-screen w-100" />
+      <div className=" w-full h-full">
+        <Particles
+          id="tsparticles"
+          options={options}
+          className="absolute h-full w-full"
+        />
       </div>
     );
   }
