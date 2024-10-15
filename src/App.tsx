@@ -4,6 +4,7 @@ import PreloaderAnimation from "./components/PreloaderAnimation";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
         <div className={`transition-opacity duration-200 ease-in-out ${
           fadeOut ? "opacity-100" : "opacity-0"
         }`}>
+          <Navbar />
           <Cursor />
           <Home />
           <About />
