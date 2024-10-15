@@ -100,9 +100,23 @@ const projects = [
             className="w-full h-64 object-cover rounded-md"
           />
           <div className="mt-10 ">
-          <h1 className="text-6xl font-extrabold montserrat-bold">
+         <div className="flex justify-between">
+         <h1 className="text-6xl font-extrabold montserrat-bold">
             {selectedProject.name}
           </h1>
+          <div className="flex gap-2">
+            {selectedProject.images.map((image, index) => (
+              <div className="rounded-xl ring-1 ring-violet w-10 h-10">
+                <img
+                  key={index}
+                  src={image}
+                  alt={selectedProject.name}
+                  className="w-10 h-10 object-cover rounded-xl"/>
+              </div>
+            ))}
+           
+          </div>
+         </div>
           <p className="mt-5 text-lg text-gray-400 montserrat">
             {selectedProject.description}
           </p>
